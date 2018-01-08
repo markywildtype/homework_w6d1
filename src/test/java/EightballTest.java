@@ -14,19 +14,19 @@ public class EightballTest {
 
     @Test
     public void hasLength(){
-        assertEquals(3, eightball.responseCount());
+        assertEquals(7, eightball.responseCount());
     }
 
     @Test
     public void canAddResponse(){
         eightball.addResponse("Signs are good!");
-        assertEquals(4, eightball.responseCount());
+        assertEquals(8, eightball.responseCount());
     }
 
     @Test
     public void canRemoveResponse(){
         eightball.removeResponse(0);
-        assertEquals(2, eightball.responseCount());
+        assertEquals(6, eightball.responseCount());
     }
 
 }
